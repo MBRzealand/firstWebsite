@@ -46,6 +46,10 @@ function buttonMinus() {
     document.getElementById("calculatorDisplay").innerHTML += "-";
 }
 
+function buttonClear() {
+    document.getElementById("calculatorDisplay").innerHTML = "";
+}
+
 function buttonEquals() {
     var number = eval(document.getElementById("calculatorDisplay").innerHTML);
     document.getElementById("calculatorDisplay").innerHTML = number;
