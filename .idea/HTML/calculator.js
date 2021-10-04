@@ -50,6 +50,18 @@ function buttonClear() {
     document.getElementById("calculatorDisplay").innerHTML = "";
 }
 
+function buttonMultiply() {
+    document.getElementById("calculatorDisplay").innerHTML += "*";
+}
+
+function buttonDivide() {
+    document.getElementById("calculatorDisplay").innerHTML += "/";
+}
+
+function buttonDecimal() {
+    document.getElementById("calculatorDisplay").innerHTML = ".";
+}
+
 function buttonEquals() {
     var number = eval(document.getElementById("calculatorDisplay").innerHTML);
     document.getElementById("calculatorDisplay").innerHTML = number;
