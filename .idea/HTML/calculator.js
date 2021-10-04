@@ -59,7 +59,7 @@ function buttonDivide() {
 }
 
 function buttonDecimal() {
-    document.getElementById("calculatorDisplay").innerHTML = ".";
+    document.getElementById("calculatorDisplay").innerHTML += ".";
 }
 
 function buttonEquals() {
