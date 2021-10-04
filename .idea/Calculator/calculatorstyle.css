@@ -1,6 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .Calculator{
     margin-left: 50%;
-    margin-top: 400px;
+    margin-top: 420px;
     position: absolute;
 }
 
@@ -16,13 +21,15 @@
 }
 
 .CalculatorDisplay{
-    width: 110px;
+    padding: 5px;
+    line-height: 20px;
+    margin-bottom: 10px;
     border:3px;
     border-style:solid;
     border-color:#000000;
     border-radius: 5px;
-    height: 30px;
-    width: 152px;
+    height: 20px;
+    width: 140px;
     background-color: #bebebe;
 }
 

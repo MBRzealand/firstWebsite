@@ -200,3 +200,14 @@ h1 {
   text-align: center;
 }
 
+.Link{
+  position: relative;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.LinkContainer{
+  position: relative;
+  margin-top: 10%;
+}
+
