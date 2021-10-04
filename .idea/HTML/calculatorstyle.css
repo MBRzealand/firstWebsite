@@ -1,0 +1,53 @@
+.Calculator{
+    margin-left: 50%;
+    margin-top: 400px;
+    position: absolute;
+}
+
+.CalculatorBackground{
+    position: absolute;
+    border-radius: 5px;
+    margin-left:49.7%;
+    margin-top: 410px;
+    width: 170px;
+    height: 220px;
+    background-color: #6e6e6e;
+    z-index: -1;
+}
+
+.CalculatorDisplay{
+    width: 110px;
+    border:3px;
+    border-style:solid;
+    border-color:#000000;
+    border-radius: 5px;
+    height: 30px;
+    width: 152px;
+    background-color: #bebebe;
+}
+
+.RegularButton{
+    border-radius: 5px;
+    width: 50px;
+    height: 25px;
+    background-color: black;
+    color: white;
+}
+
+.ClearButton{
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 50px;
+    height: 25px;
+    background-color: #ff0000;
+    color: white;
+}
+
+.EqualsButton{
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 104px;
+    height: 25px;
+    background-color: #ff9d61;
+    color: white;"
+}
