@@ -1,60 +1,82 @@
+@font-face {
+    font-family: digital7;
+    src: url(digital7.woff);
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 .Calculator{
-    margin-left: 50%;
-    margin-top: 420px;
     position: absolute;
-}
-
-.CalculatorBackground{
-    position: absolute;
-    border-radius: 5px;
-    margin-left:49.7%;
-    margin-top: 410px;
-    width: 170px;
-    height: 220px;
+    display: flex;
+    flex-direction: column;
+    left: 10vw;
+    top: 10vh;
     background-color: #6e6e6e;
-    z-index: -1;
+    border-radius: 1vh;
+    padding-top: 1vh;
+    margin-top: -1vh;
+    padding-bottom: 1vh;
+    margin-bottom: -1vh;
+    padding-left: 0.5vw;
+    margin-left: -0.5vw;
+    padding-right: 0.5vw;
+    margin-right: -0.5vw;
 }
 
 .CalculatorDisplay{
-    padding: 5px;
-    line-height: 20px;
-    margin-bottom: 10px;
-    border:3px;
+    display: flex;
+    height: 2vh;
+    font-size: 3vh;
+    font-family: digital7;
+    padding: 1vh;
+    line-height: 2vh;
+    margin-bottom: 1vh;
+    border:0.3vh;
     border-style:solid;
-    border-color:#000000;
-    border-radius: 5px;
-    height: 20px;
-    width: 140px;
-    background-color: #bebebe;
+    border-color:black;
+    border-radius: 1vh;
+    background-color: white;
 }
 
 .RegularButton{
-    border-radius: 5px;
-    width: 50px;
-    height: 25px;
+    border-radius: 1vh;
+    width: 3vw;
+    height: 2vh;
     background-color: black;
     color: white;
 }
 
 .ClearButton{
-    border-radius: 5px;
-    margin-top: 5px;
-    width: 50px;
-    height: 25px;
+    border-radius: 1vh;
+    width: 3vw;
+    height: 2vh;
     background-color: #ff0000;
     color: white;
 }
 
 .EqualsButton{
-    border-radius: 5px;
-    margin-top: 5px;
-    width: 104px;
-    height: 25px;
+    border-radius: 1vh;
+    width: 6.5vw;
+    height: 2vh;
     background-color: #ff9d61;
-    color: white;"
+    color: white;
+}
+
+.ButtonRow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.FinalButtonRow{
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ButtonPanel{
+    width: 10vw;
+    height: 20vh;
 }

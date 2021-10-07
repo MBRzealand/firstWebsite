@@ -8,40 +8,44 @@
 </head>
 <body>
 
-<div class="CalculatorBackground" ></div>
+
 <div class="Calculator">
     <div class="CalculatorDisplay">
         <p id="calculatorDisplay"></p>
     </div>
-    <div>
-        <button class="RegularButton" onclick="buttonOne()">1</button>
-        <button class="RegularButton" onclick="buttonTwo()">2</button>
-        <button class="RegularButton" onclick="buttonThree()">3</button>
+
+    <div class="ButtonPanel">
+        <div class="ButtonRow">
+            <button class="RegularButton" onclick="buttonOne()">1</button>
+            <button class="RegularButton" onclick="buttonTwo()">2</button>
+            <button class="RegularButton" onclick="buttonThree()">3</button>
+        </div>
+        <div class="ButtonRow">
+            <button class="RegularButton" onclick="buttonFour()">4</button>
+            <button class="RegularButton" onclick="buttonFive()">5</button>
+            <button class="RegularButton" onclick="buttonSix()">6</button>
+        </div>
+        <div class="ButtonRow">
+            <button class="RegularButton" onclick="buttonSeven()">7</button>
+            <button class="RegularButton" onclick="buttonEight()">8</button>
+            <button class="RegularButton" onclick="buttonNine()">9</button>
+        </div>
+        <div class="ButtonRow">
+            <button class="RegularButton" onclick="buttonPlus()">+</button>
+            <button class="RegularButton" onclick="buttonZero()">0</button>
+            <button class="RegularButton" onclick="buttonMinus()">-</button>
+        </div>
+        <div class="ButtonRow">
+            <button class="RegularButton" onclick="buttonMultiply()">*</button>
+            <button class="RegularButton" onclick="buttonDecimal()">.</button>
+            <button class="RegularButton" onclick="buttonDivide()">/</button>
+        </div>
+        <div class="FinalButtonRow">
+            <button class="ClearButton" onclick="buttonClear()">Clear</button>
+            <button class="EqualsButton" onclick="buttonEquals()">=</button>
+        </div>
     </div>
-    <div>
-        <button class="RegularButton" onclick="buttonFour()">4</button>
-        <button class="RegularButton" onclick="buttonFive()">5</button>
-        <button class="RegularButton" onclick="buttonSix()">6</button>
-    </div>
-    <div>
-        <button class="RegularButton" onclick="buttonSeven()">7</button>
-        <button class="RegularButton" onclick="buttonEight()">8</button>
-        <button class="RegularButton" onclick="buttonNine()">9</button>
-    </div>
-    <div>
-        <button class="RegularButton" onclick="buttonPlus()">+</button>
-        <button class="RegularButton" onclick="buttonZero()">0</button>
-        <button class="RegularButton" onclick="buttonMinus()">-</button>
-    </div>
-    <div>
-        <button class="RegularButton" onclick="buttonMultiply()">*</button>
-        <button class="RegularButton" onclick="buttonDecimal()">.</button>
-        <button class="RegularButton" onclick="buttonDivide()">/</button>
-    </div>
-    <div>
-        <button class="ClearButton" onclick="buttonClear()">Clear</button>
-        <button class="EqualsButton" onclick="buttonEquals()">=</button>
-    </div>
+
 </div>
 
 </body>
