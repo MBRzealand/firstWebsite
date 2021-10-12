@@ -4,7 +4,7 @@ function searchPlanets(){
     var allPlanetsString = "";
     category = "planets"
 
-    fillListFromMultiplePages(allPlanetsString, 'name', 10)
+    fillListFromMultiplePages(allPlanetsString, 'name', 9)
 
 }
 
@@ -12,7 +12,7 @@ function searchStarships(){
     var allStarshipsString = "";
     category = "starships"
 
-    fillListFromMultiplePages(allStarshipsString, 'name', 10)
+    fillListFromMultiplePages(allStarshipsString, 'name', 9)
 
 }
 
@@ -20,27 +20,27 @@ function searchVehicles(){
     var allVehiclesString = "";
     category = "vehicles";
 
-    fillListFromMultiplePages(allVehiclesString, 'name', 10)
+    fillListFromMultiplePages(allVehiclesString, 'name', 9)
 
 }
 function searchPeople(){
     var allPeopleString = "";
     category = "people"
 
-    fillListFromMultiplePages(allPeopleString, 'name', 10)
+    fillListFromMultiplePages(allPeopleString, 'name', 9)
 }
 function searchFilms(){
     var allFilmsString = "";
     category = "films"
 
-    fillListFromMultiplePages(allFilmsString, 'title', 10)
+    fillListFromMultiplePages(allFilmsString, 'title', 3)
 }
 function searchSpecies(){
     var allSpeciesString = "";
 
     category = "species"
 
-    fillListFromMultiplePages(allSpeciesString, 'name', 20)
+    fillListFromMultiplePages(allSpeciesString, 'name', 9)
 }
 
 function generateLink(selectedPage){
