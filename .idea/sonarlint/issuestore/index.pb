@@ -11,3 +11,13 @@ W
 -.idea/Causes Pages/Chuck Norris Joke/chuck.js,a\1\a1a15ee5256f42184796ef0b087d2b2b246696a7
 _
 /.idea/Causes Pages/Chuck Norris Joke/chuck.html,e\b\eb57b7601bca417f1eca3878944e80efab3848b6
+`
+0.idea/Causes Pages/Click Counter/clickcounter.js,1\2\12fe90bf7767c64d675b142a9aee209033795dbb
+a
+1.idea/Causes Pages/Calculator/calculatorstyle.css,6\c\6cdbd788be86b6c7be40a6ca60ee534530b5e88b
+a
+1.idea/Causes Pages/Click Counter/clickcounter.css,a\9\a91e725b13f4e1e946f496986fc3e61fa707e69a
+b
+2.idea/Causes Pages/Click Counter/clickcounter.html,f\b\fbfd9497a910f97b9a2fb848d1b9fced59f528f2
+M
+.idea/Main Website/styles.css,9\e\9e13b9cb42a95b13084c1ffd307c1aaed169e3a7

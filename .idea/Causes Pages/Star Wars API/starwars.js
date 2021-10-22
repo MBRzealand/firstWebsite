@@ -1,10 +1,11 @@
 var category;
 
 function searchPlanets(){
+
     var allPlanetsString = "";
     category = "planets"
 
-    fillListFromMultiplePages(allPlanetsString, 'name', 9)
+    fillListFromMultiplePages(allPlanetsString, 'name', 8)
 
 }
 
@@ -12,7 +13,7 @@ function searchStarships(){
     var allStarshipsString = "";
     category = "starships"
 
-    fillListFromMultiplePages(allStarshipsString, 'name', 9)
+    fillListFromMultiplePages(allStarshipsString, 'name', 8)
 
 }
 
@@ -20,27 +21,27 @@ function searchVehicles(){
     var allVehiclesString = "";
     category = "vehicles";
 
-    fillListFromMultiplePages(allVehiclesString, 'name', 9)
+    fillListFromMultiplePages(allVehiclesString, 'name', 8)
 
 }
 function searchPeople(){
     var allPeopleString = "";
     category = "people"
 
-    fillListFromMultiplePages(allPeopleString, 'name', 9)
+    fillListFromMultiplePages(allPeopleString, 'name', 8)
 }
 function searchFilms(){
     var allFilmsString = "";
     category = "films"
 
-    fillListFromMultiplePages(allFilmsString, 'title', 3)
+    fillListFromMultiplePages(allFilmsString, 'title', 2)
 }
 function searchSpecies(){
     var allSpeciesString = "";
 
     category = "species"
 
-    fillListFromMultiplePages(allSpeciesString, 'name', 9)
+    fillListFromMultiplePages(allSpeciesString, 'name', 8)
 }
 
 function generateLink(selectedPage){
@@ -87,10 +88,15 @@ function fillListFromMultiplePages(listName, searchDataType, pages){
                     var search = "jsonObject.results[" + j + "]." + searchDataType;
                     listName += eval(search);
                     listName += '\n';
+
+                    let btn = document.createElement("button");
+                    var br = document.createElement("br");
+                    btn.innerHTML = eval(search);
+                    btn.onclick = function () {};
+                    document.body.appendChild(btn);
+                    document.body.appendChild(br);
+
                 }
-
-                document.getElementById("starWars").innerHTML = listName;
-
             }
 
         xhttp.open("GET", generateLink(i), false);

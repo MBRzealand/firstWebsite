@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="recipe.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+<h1>Pandekagemaskine</h1>
+
+<p class="intro"><a href="https://www.dk-kogebogen.dk/opskrifter/31044/pandekager-gammeldags">Pandekage-opskrift</a> fra Dk-Kogebogen.</p>
+
+<form onsubmit="return false" oninput="output.value = antalPandekager.valueAsNumber">
+    Hvor mange pandekager vil du lave?<br />
+    <input id="antalPandekager" type="range" min="1" max="100" value="12"><br /> Antal pandekager <output for="antalPandekager" name="output">12</output>.
+</form>
+
+<script src="recipe.js"></script>
+
+<ul>
+    <li><input type="text" name="firstname" value="4">stk Æg</li>
+    <li><input type="text" name="firstname" value="150">g Hvedemel</li>
+    <li><input type="text" name="firstname" value="25">g Smør</li>
+    <li><input type="text" name="firstname" value="3">dl Sødmælk</li>
+    <li><input type="text" name="firstname" value="1">knsp Salt</li>
+    <li><input type="text" name="firstname" value="1">spsk Sukker</li>
+    <li><input type="text" name="firstname" value="1">spsk Vaniljesukker</li>
+</ul>
+
+<p>Æg og mel piskes sammen. Heri piskes det varme smeltede smør, spæd med mælk og smages til med salt, sukker og vanille.</p>
+
+<p>Bag pandekagerne lysebrune i smør på pande med 19 cm. i diameter.</p>
+
+<p>Server pandekagerne med, sukker og syltetøj, blød vanilleis eller flødeskum.</p>
+</body>
+</html>
