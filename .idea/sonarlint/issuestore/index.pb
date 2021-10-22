@@ -21,3 +21,7 @@ b
 2.idea/Causes Pages/Click Counter/clickcounter.html,f\b\fbfd9497a910f97b9a2fb848d1b9fced59f528f2
 M
 .idea/Main Website/styles.css,9\e\9e13b9cb42a95b13084c1ffd307c1aaed169e3a7
+[
++.idea/Causes Pages/Calculator/calculator.js,1\3\13630c38ac2b17f119384e4d9d60cf4c938d22d4
+]
+-.idea/Causes Pages/Star Wars API/starwars.css,0\b\0b0cdf8b5acbc5e4de9e988060cc8a613cc54d59
