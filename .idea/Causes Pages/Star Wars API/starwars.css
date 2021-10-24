@@ -6,6 +6,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
 }
 
 body {
@@ -28,6 +30,8 @@ button {
 }
 
 .bigButton {
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: 20px;
     height: 50px;
     width: 200px;
@@ -36,30 +40,30 @@ button {
 
 .textDisplay {
     position: absolute;
-    margin-top: 23%;
-    margin-left: 34%;
+    top: 55%;
+    left: 34%;
     color: white;
 }
 
-p#name{
+p#description1{
     margin-bottom: 10px;
 }
-p#rotationalPeriod{
+p#description2{
     margin-bottom: 10px;
 }
-p#orbitalPeriod{
+p#description3{
     margin-bottom: 10px;
 }
-p#diameter{
+p#description4{
     margin-bottom: 10px;
 }
-p#climate{
+p#description5{
     margin-bottom: 10px;
 }
-p#terrain{
+p#description6{
     margin-bottom: 10px;
 }
-p#population{
+p#description7{
     margin-bottom: 10px;
 }
 
@@ -76,6 +80,6 @@ p#population{
 #topButtons {
     margin-top: 20px;
     display: flex;
-    align-content: space-evenly;
-    justify-content: space-evenly;
+    align-content: flex-start;
+    justify-content: center;
 }

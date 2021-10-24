@@ -47,6 +47,16 @@ function searchSpecies(){
     fillListFromMultiplePages(allSpeciesString, 'name', 8)
 }
 
+function removeStyle() {
+    document.getElementById("description6").style.removeProperty("position");
+    document.getElementById("description6").style.removeProperty("width");
+    document.getElementById("description6").style.fontSize = "20px";
+    document.getElementById("description6").style.marginTop = "0px";
+    document.getElementById("description6").style.removeProperty("padding");
+    document.getElementById("description6").style.removeProperty("left");
+    document.getElementById("description6").style.fontFamily = "Times New Roman";
+    document.getElementById("description6").style.removeProperty("color");
+}
 
 function generateLink(selectedPage){
     var preset = "https://swapi.dev/api/"
@@ -64,26 +74,147 @@ function generateSearchLink(buttonName){
 
         var jsonObject = JSON.parse(this.responseText);
 
-        var name = "jsonObject.results[0].name";
-        document.getElementById("name").innerHTML = "Name: " + eval(name);
+        if(category == "planets") {
 
-        var rotation = "jsonObject.results[0].rotation_period";
-        document.getElementById("rotationalPeriod").innerHTML = "Rotational Period: " + eval(rotation);
+            removeStyle()
 
-        var orbit = "jsonObject.results[0].orbital_period";
-        document.getElementById("orbitalPeriod").innerHTML = "Orbital Period: " + eval(orbit);
+            var name = "jsonObject.results[0].name";
+            document.getElementById("description1").innerHTML = "Name: " + eval(name);
 
-        var diameter = "jsonObject.results[0].diameter";
-        document.getElementById("diameter").innerHTML = "Diameter: " + eval(diameter);
+            var rotation = "jsonObject.results[0].rotation_period";
+            document.getElementById("description2").innerHTML = "Rotational Period: " + eval(rotation);
 
-        var climate = "jsonObject.results[0].climate";
-        document.getElementById("climate").innerHTML = "Climate: " + eval(climate);
+            var orbit = "jsonObject.results[0].orbital_period";
+            document.getElementById("description3").innerHTML = "Orbital Period: " + eval(orbit);
 
-        var terrain = "jsonObject.results[0].terrain";
-        document.getElementById("terrain").innerHTML = "Terrain: " + eval(terrain);
+            var diameter = "jsonObject.results[0].diameter";
+            document.getElementById("description4").innerHTML = "Diameter: " + eval(diameter);
 
-        var population = "jsonObject.results[0].population";
-        document.getElementById("population").innerHTML = "Population: " + eval(population);
+            var climate = "jsonObject.results[0].climate";
+            document.getElementById("description5").innerHTML = "Climate: " + eval(climate);
+
+            var terrain = "jsonObject.results[0].terrain";
+            document.getElementById("description6").innerHTML = "Terrain: " + eval(terrain);
+
+            var population = "jsonObject.results[0].population";
+            document.getElementById("description7").innerHTML = "Population: " + eval(population);
+
+        }
+
+        if(category == "starships") {
+
+            removeStyle()
+
+            var name = "jsonObject.results[0].name";
+            document.getElementById("description1").innerHTML = "Name: " + eval(name);
+
+            var model = "jsonObject.results[0].model";
+            document.getElementById("description2").innerHTML = "Model: " + eval(model);
+
+            var manufacturer = "jsonObject.results[0].manufacturer";
+            document.getElementById("description3").innerHTML = "Manufacturer: " + eval(manufacturer);
+
+            var crew = "jsonObject.results[0].crew";
+            document.getElementById("description4").innerHTML = "Crew: " + eval(crew);
+
+            var passengers = "jsonObject.results[0].passengers";
+            document.getElementById("description5").innerHTML = "Passengers: " + eval(passengers);
+
+            var starshipClass = "jsonObject.results[0].starship_class";
+            document.getElementById("description6").innerHTML = "Starship Class: " + eval(starshipClass);
+
+            var costInCredits = "jsonObject.results[0].cost_in_credits";
+            document.getElementById("description7").innerHTML = "Cost in Credits: " + eval(costInCredits);
+
+        }
+
+        if(category == "vehicles") {
+
+            removeStyle()
+
+            var name = "jsonObject.results[0].name";
+            document.getElementById("description1").innerHTML = "Name: " + eval(name);
+
+            var model = "jsonObject.results[0].model";
+            document.getElementById("description2").innerHTML = "Model: " + eval(model);
+
+            var manufacturer = "jsonObject.results[0].manufacturer";
+            document.getElementById("description3").innerHTML = "Manufacturer: " + eval(manufacturer);
+
+            var crew = "jsonObject.results[0].crew";
+            document.getElementById("description4").innerHTML = "Crew: " + eval(crew);
+
+            var passengers = "jsonObject.results[0].passengers";
+            document.getElementById("description5").innerHTML = "Passengers: " + eval(passengers);
+
+            var vehicleClass = "jsonObject.results[0].vehicle_class";
+            document.getElementById("description6").innerHTML = "Vehicle Class: " + eval(vehicleClass);
+
+            var costInCredits = "jsonObject.results[0].cost_in_credits";
+            document.getElementById("description7").innerHTML = "Cost in Credits: " + eval(costInCredits);
+
+        }
+
+        if(category == "people") {
+
+            removeStyle()
+
+            var name = "jsonObject.results[0].name";
+            document.getElementById("description1").innerHTML = "Name: " + eval(name);
+
+            var height = "jsonObject.results[0].height";
+            document.getElementById("description2").innerHTML = "Height: " + eval(height) + "cm";
+
+            var mass = "jsonObject.results[0].mass";
+            document.getElementById("description3").innerHTML = "Mass: " + eval(mass) + "kg";
+
+            var gender = "jsonObject.results[0].gender";
+            document.getElementById("description4").innerHTML = "Gender: " + eval(gender);
+
+            var hairColor = "jsonObject.results[0].hair_color";
+            document.getElementById("description5").innerHTML = "Hair Color: " + eval(hairColor);
+
+            var eyeColor = "jsonObject.results[0].eye_color";
+            document.getElementById("description6").innerHTML = "Eye Color: " + eval(eyeColor);
+
+            var birthYear = "jsonObject.results[0].birth_year";
+            document.getElementById("description7").innerHTML = "Birth Year: " + eval(birthYear);
+
+        }
+
+        if(category == "films") {
+
+            document.getElementById("description6").style.position = "absolute";
+            document.getElementById("description6").style.width = "1000px";
+            document.getElementById("description6").style.fontSize = "65px";
+            document.getElementById("description6").style.marginTop = "80px";
+            document.getElementById("description6").style.padding = "20px";
+            document.getElementById("description6").style.left = "-200px";
+            document.getElementById("description6").style.fontFamily = "starjedi";
+            document.getElementById("description6").style.color = "#ffd653";
+
+
+            var title = "jsonObject.results[0].title";
+            document.getElementById("description1").innerHTML = "Title: " + eval(title);
+
+            var episode = "jsonObject.results[0].episode_id";
+            document.getElementById("description2").innerHTML = "Episode: " + eval(episode);
+
+            var director = "jsonObject.results[0].director";
+            document.getElementById("description3").innerHTML = "Director: " + eval(director);
+
+            var producer = "jsonObject.results[0].producer";
+            document.getElementById("description4").innerHTML = "Producer: " + eval(producer);
+
+            var releaseDate = "jsonObject.results[0].release_date";
+            document.getElementById("description5").innerHTML = "Release Date: " + eval(releaseDate);
+
+            var opening = "jsonObject.results[0].opening_crawl";
+            document.getElementById("description6").innerHTML = eval(opening).toLowerCase();
+
+            document.getElementById("description7").innerHTML = "";
+
+        }
 
     }
 
