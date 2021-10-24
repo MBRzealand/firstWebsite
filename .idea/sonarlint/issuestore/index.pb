@@ -1,6 +1,4 @@
 
-M
-.idea/Main Website/index.html,2\1\2181251339c24dc233e08f866b8c44de8a1ab9be
 Q
 !.idea/Main Website/sparetime.html,3\2\3246c8eacd9ae14d82266b14d6ba281848afaf94
 S
@@ -14,8 +12,6 @@ _
 `
 0.idea/Causes Pages/Click Counter/clickcounter.js,1\2\12fe90bf7767c64d675b142a9aee209033795dbb
 a
-1.idea/Causes Pages/Calculator/calculatorstyle.css,6\c\6cdbd788be86b6c7be40a6ca60ee534530b5e88b
-a
 1.idea/Causes Pages/Click Counter/clickcounter.css,a\9\a91e725b13f4e1e946f496986fc3e61fa707e69a
 b
 2.idea/Causes Pages/Click Counter/clickcounter.html,f\b\fbfd9497a910f97b9a2fb848d1b9fced59f528f2
@@ -23,5 +19,3 @@ M
 .idea/Main Website/styles.css,9\e\9e13b9cb42a95b13084c1ffd307c1aaed169e3a7
 [
 +.idea/Causes Pages/Calculator/calculator.js,1\3\13630c38ac2b17f119384e4d9d60cf4c938d22d4
-]
--.idea/Causes Pages/Star Wars API/starwars.css,0\b\0b0cdf8b5acbc5e4de9e988060cc8a613cc54d59

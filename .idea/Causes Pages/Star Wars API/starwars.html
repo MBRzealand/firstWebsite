@@ -3,20 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>API Exercise</title>
+    <link href="starwars.css" rel="stylesheet">
     <script src="starwars.js"></script>
 </head>
 <body>
 
-  <div>
-      <button onclick="searchPlanets()">Planets</button>
-      <button onclick="searchStarships()">Starships</button>
-      <button onclick="searchVehicles()">Vehicles</button>
-      <button onclick="searchPeople()">People</button>
-      <button onclick="searchFilms()">Films</button>
-      <button onclick="searchSpecies()">Species</button>
-    <p id="starWars" style="margin-left: 20px; white-space: pre-line;"></p>
+  <div id="topButtons">
+      <button class = "bigButton" onclick="searchPlanets()">Planets</button>
+      <button class = "bigButton" onclick="searchStarships()">Starships</button>
+      <button class = "bigButton" onclick="searchVehicles()">vehicles</button>
+      <button class = "bigButton" onclick="searchPeople()">People</button>
+      <button class = "bigButton" onclick="searchFilms()">Films</button>
+      <button class = "bigButton" onclick="searchSpecies()">Species</button>
+    <p id="starWars" style="white-space: pre-line;"></p>
 
   </div>
+
+  <div class = "textDisplay">
+      <p id = "name"></p>
+      <p id = "rotationalPeriod"></p>
+      <p id = "orbitalPeriod"></p>
+      <p id = "diameter"></p>
+      <p id = "climate"></p>
+      <p id = "terrain"></p>
+      <p id = "population"></p>
+  </div>
+
+  <div id = "buttonContainer"></div>
+
+
 
 </body>
 </html>
