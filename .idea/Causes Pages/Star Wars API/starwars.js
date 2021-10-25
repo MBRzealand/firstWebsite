@@ -216,6 +216,34 @@ function generateSearchLink(buttonName){
 
         }
 
+        if(category == "species") {
+
+            removeStyle()
+
+            var name = "jsonObject.results[0].name";
+            document.getElementById("description1").innerHTML = "Name: " + eval(name);
+
+            var classification = "jsonObject.results[0].classification";
+            document.getElementById("description2").innerHTML = "Classification: " + eval(classification);
+
+            var designation = "jsonObject.results[0].designation";
+            document.getElementById("description3").innerHTML = "Designation: " + eval(designation);
+
+            var averageHeight = "jsonObject.results[0].average_height";
+            document.getElementById("description4").innerHTML = "Average Height: " + eval(averageHeight);
+
+            var averageLifespan = "jsonObject.results[0].average_lifespan";
+            document.getElementById("description5").innerHTML = "Average Lifespan: " + eval(averageLifespan);
+
+            var skinColors = "jsonObject.results[0].skin_colors";
+            document.getElementById("description6").innerHTML = "Skin Colors: " + eval(skinColors);
+
+            var language = "jsonObject.results[0].language";
+            document.getElementById("description7").innerHTML = "Language: " + eval(language);
+
+        }
+
+
     }
 
     xhttp.open("GET", searchPreset, false);
@@ -273,6 +301,9 @@ function fillListFromMultiplePages(listName, searchDataType, pages){
 
                     btn.onclick = function(){
                         generateSearchLink(btn.innerHTML);
+                        while (document.getElementById("buttonContainer").hasChildNodes()) {
+                            document.getElementById("buttonContainer").removeChild(document.getElementById("buttonContainer").lastChild);
+                        }
                     }
 
                     var br = document.createElement("br");
