@@ -59,44 +59,44 @@ function removeStyle() {
 }
 
 function generateLink(selectedPage){
-    var preset = "https://swapi.dev/api/"
-    var searchPreset = preset + category + "/?page=" + selectedPage
+    let preset = "https://swapi.dev/api/"
+    let searchPreset = preset + category + "/?page=" + selectedPage
     return searchPreset
 }
 
 function generateSearchLink(buttonName){
-    var preset = "https://swapi.dev/api/"
-    var searchPreset = preset + category + "/?search=" + buttonName
+    let preset = "https://swapi.dev/api/"
+    let searchPreset = preset + category + "/?search=" + buttonName
 
     const xhttp = new XMLHttpRequest();
 
     xhttp.onload = function () {
 
-        var jsonObject = JSON.parse(this.responseText);
+        let jsonObject = JSON.parse(this.responseText);
 
         if(category == "planets") {
 
             removeStyle()
 
-            var name = "jsonObject.results[0].name";
+            let name = "jsonObject.results[0].name";
             document.getElementById("description1").innerHTML = "Name: " + eval(name);
 
-            var rotation = "jsonObject.results[0].rotation_period";
+            let rotation = "jsonObject.results[0].rotation_period";
             document.getElementById("description2").innerHTML = "Rotational Period: " + eval(rotation);
 
-            var orbit = "jsonObject.results[0].orbital_period";
+            let orbit = "jsonObject.results[0].orbital_period";
             document.getElementById("description3").innerHTML = "Orbital Period: " + eval(orbit);
 
-            var diameter = "jsonObject.results[0].diameter";
+            let diameter = "jsonObject.results[0].diameter";
             document.getElementById("description4").innerHTML = "Diameter: " + eval(diameter);
 
-            var climate = "jsonObject.results[0].climate";
+            let climate = "jsonObject.results[0].climate";
             document.getElementById("description5").innerHTML = "Climate: " + eval(climate);
 
-            var terrain = "jsonObject.results[0].terrain";
+            let terrain = "jsonObject.results[0].terrain";
             document.getElementById("description6").innerHTML = "Terrain: " + eval(terrain);
 
-            var population = "jsonObject.results[0].population";
+            let population = "jsonObject.results[0].population";
             document.getElementById("description7").innerHTML = "Population: " + eval(population);
 
         }
@@ -105,25 +105,25 @@ function generateSearchLink(buttonName){
 
             removeStyle()
 
-            var name = "jsonObject.results[0].name";
+            let name = "jsonObject.results[0].name";
             document.getElementById("description1").innerHTML = "Name: " + eval(name);
 
-            var model = "jsonObject.results[0].model";
+            let model = "jsonObject.results[0].model";
             document.getElementById("description2").innerHTML = "Model: " + eval(model);
 
-            var manufacturer = "jsonObject.results[0].manufacturer";
+            let manufacturer = "jsonObject.results[0].manufacturer";
             document.getElementById("description3").innerHTML = "Manufacturer: " + eval(manufacturer);
 
-            var crew = "jsonObject.results[0].crew";
+            let crew = "jsonObject.results[0].crew";
             document.getElementById("description4").innerHTML = "Crew: " + eval(crew);
 
-            var passengers = "jsonObject.results[0].passengers";
+            let passengers = "jsonObject.results[0].passengers";
             document.getElementById("description5").innerHTML = "Passengers: " + eval(passengers);
 
-            var starshipClass = "jsonObject.results[0].starship_class";
+            let starshipClass = "jsonObject.results[0].starship_class";
             document.getElementById("description6").innerHTML = "Starship Class: " + eval(starshipClass);
 
-            var costInCredits = "jsonObject.results[0].cost_in_credits";
+            let costInCredits = "jsonObject.results[0].cost_in_credits";
             document.getElementById("description7").innerHTML = "Cost in Credits: " + eval(costInCredits);
 
         }
@@ -132,25 +132,25 @@ function generateSearchLink(buttonName){
 
             removeStyle()
 
-            var name = "jsonObject.results[0].name";
+            let name = "jsonObject.results[0].name";
             document.getElementById("description1").innerHTML = "Name: " + eval(name);
 
-            var model = "jsonObject.results[0].model";
+            let model = "jsonObject.results[0].model";
             document.getElementById("description2").innerHTML = "Model: " + eval(model);
 
-            var manufacturer = "jsonObject.results[0].manufacturer";
+            let manufacturer = "jsonObject.results[0].manufacturer";
             document.getElementById("description3").innerHTML = "Manufacturer: " + eval(manufacturer);
 
-            var crew = "jsonObject.results[0].crew";
+            let crew = "jsonObject.results[0].crew";
             document.getElementById("description4").innerHTML = "Crew: " + eval(crew);
 
-            var passengers = "jsonObject.results[0].passengers";
+            let passengers = "jsonObject.results[0].passengers";
             document.getElementById("description5").innerHTML = "Passengers: " + eval(passengers);
 
-            var vehicleClass = "jsonObject.results[0].vehicle_class";
+            let vehicleClass = "jsonObject.results[0].vehicle_class";
             document.getElementById("description6").innerHTML = "Vehicle Class: " + eval(vehicleClass);
 
-            var costInCredits = "jsonObject.results[0].cost_in_credits";
+            let costInCredits = "jsonObject.results[0].cost_in_credits";
             document.getElementById("description7").innerHTML = "Cost in Credits: " + eval(costInCredits);
 
         }
@@ -159,25 +159,25 @@ function generateSearchLink(buttonName){
 
             removeStyle()
 
-            var name = "jsonObject.results[0].name";
+            let name = "jsonObject.results[0].name";
             document.getElementById("description1").innerHTML = "Name: " + eval(name);
 
-            var height = "jsonObject.results[0].height";
+            let height = "jsonObject.results[0].height";
             document.getElementById("description2").innerHTML = "Height: " + eval(height) + "cm";
 
-            var mass = "jsonObject.results[0].mass";
+            let mass = "jsonObject.results[0].mass";
             document.getElementById("description3").innerHTML = "Mass: " + eval(mass) + "kg";
 
-            var gender = "jsonObject.results[0].gender";
+            let gender = "jsonObject.results[0].gender";
             document.getElementById("description4").innerHTML = "Gender: " + eval(gender);
 
-            var hairColor = "jsonObject.results[0].hair_color";
+            let hairColor = "jsonObject.results[0].hair_color";
             document.getElementById("description5").innerHTML = "Hair Color: " + eval(hairColor);
 
-            var eyeColor = "jsonObject.results[0].eye_color";
+            let eyeColor = "jsonObject.results[0].eye_color";
             document.getElementById("description6").innerHTML = "Eye Color: " + eval(eyeColor);
 
-            var birthYear = "jsonObject.results[0].birth_year";
+            let birthYear = "jsonObject.results[0].birth_year";
             document.getElementById("description7").innerHTML = "Birth Year: " + eval(birthYear);
 
         }
@@ -194,22 +194,22 @@ function generateSearchLink(buttonName){
             document.getElementById("description6").style.color = "#ffd653";
 
 
-            var title = "jsonObject.results[0].title";
+            let title = "jsonObject.results[0].title";
             document.getElementById("description1").innerHTML = "Title: " + eval(title);
 
-            var episode = "jsonObject.results[0].episode_id";
+            let episode = "jsonObject.results[0].episode_id";
             document.getElementById("description2").innerHTML = "Episode: " + eval(episode);
 
-            var director = "jsonObject.results[0].director";
+            let director = "jsonObject.results[0].director";
             document.getElementById("description3").innerHTML = "Director: " + eval(director);
 
-            var producer = "jsonObject.results[0].producer";
+            let producer = "jsonObject.results[0].producer";
             document.getElementById("description4").innerHTML = "Producer: " + eval(producer);
 
-            var releaseDate = "jsonObject.results[0].release_date";
+            let releaseDate = "jsonObject.results[0].release_date";
             document.getElementById("description5").innerHTML = "Release Date: " + eval(releaseDate);
 
-            var opening = "jsonObject.results[0].opening_crawl";
+            let opening = "jsonObject.results[0].opening_crawl";
             document.getElementById("description6").innerHTML = eval(opening).toLowerCase();
 
             document.getElementById("description7").innerHTML = "";
@@ -220,25 +220,25 @@ function generateSearchLink(buttonName){
 
             removeStyle()
 
-            var name = "jsonObject.results[0].name";
+            let name = "jsonObject.results[0].name";
             document.getElementById("description1").innerHTML = "Name: " + eval(name);
 
-            var classification = "jsonObject.results[0].classification";
+            let classification = "jsonObject.results[0].classification";
             document.getElementById("description2").innerHTML = "Classification: " + eval(classification);
 
-            var designation = "jsonObject.results[0].designation";
+            let designation = "jsonObject.results[0].designation";
             document.getElementById("description3").innerHTML = "Designation: " + eval(designation);
 
-            var averageHeight = "jsonObject.results[0].average_height";
+            let averageHeight = "jsonObject.results[0].average_height";
             document.getElementById("description4").innerHTML = "Average Height: " + eval(averageHeight);
 
-            var averageLifespan = "jsonObject.results[0].average_lifespan";
+            let averageLifespan = "jsonObject.results[0].average_lifespan";
             document.getElementById("description5").innerHTML = "Average Lifespan: " + eval(averageLifespan);
 
-            var skinColors = "jsonObject.results[0].skin_colors";
+            let skinColors = "jsonObject.results[0].skin_colors";
             document.getElementById("description6").innerHTML = "Skin Colors: " + eval(skinColors);
 
-            var language = "jsonObject.results[0].language";
+            let language = "jsonObject.results[0].language";
             document.getElementById("description7").innerHTML = "Language: " + eval(language);
 
         }
@@ -257,10 +257,10 @@ function fillListFromSinglePage(listName, searchDataType){
 
     if( listName == ""){
         xhttp.onload = function() {
-            var jsonObject = JSON.parse(this.responseText);
+            let jsonObject = JSON.parse(this.responseText);
 
             for (let i in jsonObject.results) {
-                var search = "jsonObject.results[" + i + "]." + searchDataType;
+                let search = "jsonObject.results[" + i + "]." + searchDataType;
                 listName += eval(search);
                 listName += '\n';
             }
@@ -292,7 +292,7 @@ function fillListFromMultiplePages(listName, searchDataType, pages){
                 var jsonObject = JSON.parse(this.responseText);
 
                 for (let j = 0; j < jsonObject.results.length; j++) {
-                    var search = "jsonObject.results[" + j + "]." + searchDataType;
+                    let search = "jsonObject.results[" + j + "]." + searchDataType;
                     listName += eval(search);
                     listName += '\n';
 
@@ -306,7 +306,7 @@ function fillListFromMultiplePages(listName, searchDataType, pages){
                         }
                     }
 
-                    var br = document.createElement("br");
+                    let br = document.createElement("br");
                     document.getElementById("buttonContainer").appendChild(btn);
 
 

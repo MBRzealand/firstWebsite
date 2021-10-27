@@ -1,0 +1,40 @@
+{
+  "groentsager": [
+    {
+      "id": "aebler",
+      "antal": 20,
+      "pris": "1kr"
+    },
+    {
+      "id": "agurk",
+      "antal": 30,
+      "pris": "6kr"
+    }
+  ],
+
+  "desserter": [
+    {
+      "id": "kage",
+      "antal": 10,
+      "pris": "30kr"
+    },
+    {
+      "id": "is",
+      "antal": 15,
+      "pris": "45kr"
+    }
+  ],
+
+  "mejeriprodukter": [
+    {
+      "id": "maelk",
+      "antal": 25,
+      "pris": "12kr"
+    },
+    {
+      "id": "yoghurt",
+      "antal": 35,
+      "pris": "15kr"
+    }
+  ]
+}
