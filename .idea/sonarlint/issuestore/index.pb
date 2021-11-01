@@ -19,9 +19,17 @@ W
 -.idea/Causes Pages/RecipeCalculator/recipe.js,8\3\83bbb69cc16f18c034ea49889864b9b86f193b8f
 W
 '.idea/Causes Pages/Clock/clockstyle.css,f\5\f5fa506c98804b6a52457a764e7c4e02f4a5ec75
-^
-..idea/Causes Pages/RecipeCalculator/recipe.css,8\1\81ce1ca5a4a0b6013310e1395d3a0f4d2d043645
 N
 .idea/Main Website/causes.html,4\1\4125e0bb526eabda103cf15ed989a466969ebf5f
 a
 1.idea/Causes Pages/Calculator/calculatorstyle.css,6\c\6cdbd788be86b6c7be40a6ca60ee534530b5e88b
+M
+.idea/Main Website/styles.css,9\e\9e13b9cb42a95b13084c1ffd307c1aaed169e3a7
+[
++.idea/Causes Pages/Calculator/calculator.js,1\3\13630c38ac2b17f119384e4d9d60cf4c938d22d4
+_
+/.idea/Causes Pages/Chuck Norris Joke/chuck.html,e\b\eb57b7601bca417f1eca3878944e80efab3848b6
+U
+%.idea/Main Website/NodeJSUngaBunga.js,7\3\73ebf9d2bee9cecfe18d8cfbbe4a2eb0f6e708e0
+]
+-.idea/Causes Pages/Star Wars API/starwars.css,0\b\0b0cdf8b5acbc5e4de9e988060cc8a613cc54d59

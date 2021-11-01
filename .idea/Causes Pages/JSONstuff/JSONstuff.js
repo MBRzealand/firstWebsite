@@ -1,14 +1,44 @@
+document.onload = searchJSON()
 
-function displayJSON(){
+function searchJSON(){
 
     const xhttp = new XMLHttpRequest();
+
     xhttp.onload = function() {
 
-        let jsonObject = JSON.parse(this.responseText);
-        console.log(jsonObject)
+        let jsonData = JSON.parse(this.responseText);
+        let jsonString = JSON.stringify(jsonData)
+
+        let textInput = document.getElementById('textInput').value;
+        let functionString = "jsonData" + textInput
+
+        let searchedJsonString = JSON.stringify(eval(functionString))
+
+        let coloredString = jsonString.replace(searchedJsonString, searchedJsonString.fontcolor("green"))
+
+        document.getElementById("outputString").innerHTML = coloredString
+            .replace('\"groentsager\"', '\n  \"groentsager\"')
+            .replace('\"desserter\"', '\n  \"desserter\"')
+            .replace('\"mejeriprodukter\"', '\n  \"mejeriprodukter\"')
+            .replace('}]}', '}]\n}')
+            .replaceAll('[', '[\n    ')
+            .replaceAll('},{', '\n    },{')
+            .replaceAll('}]', '}\n  ]')
+            .replaceAll('{"', '{\n      "')
+            .replaceAll(',"', ',\n      "')
+            .replaceAll(',{', ',\n    {')
+            .replaceAll('"}', '"\n    }')
+            .replaceAll('},<font color="green">{', '},\n<font color="green">    {')
+            .replaceAll('}</font>],', '}</font>\n  ],')
+            .replaceAll('],','],\n')
+            .replaceAll(']</font>,',']</font>,\n')
+            .replaceAll(']</font>}',']</font>\n}')
+            .replaceAll('}</font>]}','}\n</font>  ]\n}')
+
+
     }
 
-    xhttp.open("GET", 'JSON.json', false);
+    xhttp.open("GET", "JSON.json", true);
     xhttp.send();
 
 }

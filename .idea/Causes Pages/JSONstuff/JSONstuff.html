@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>JSONstuff</title>
+    <link href="JSONstuff.css" rel="stylesheet">
+    <script src="JSONstuff.js"></script>
 </head>
 <body>
 
-<button onclick="displayJSON()">Display JSON</button>
-<script src="https://unpkg.com/json5@^2.0.0/dist/index.min.js"></script>
-<script src="JSONstuff.js"></script>
+    <p id="title">Search elements in the JSON file</p>
+
+    <div class="inputArea">
+        <p>jsonData</p>
+        <input id = "textInput" type = "text" oninput="searchJSON()">
+    </div>
+
+    <p id="resultText">You are currently here:</p>
+
+    <pre class="centerText" >
+        <p id="outputString"></p>
+    </pre>
 
 </body>
 </html>
