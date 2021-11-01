@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Army;
+    src: url(armyFont.woff);
+}
+
+#textOutput{
+    font-family: Army;
+    font-size: 40px;
+}

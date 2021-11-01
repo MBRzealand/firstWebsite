@@ -1,12 +1,12 @@
 document.onload = searchJSON()
 
-function searchJSON(){
+async function searchJSON() {
 
-    const xhttp = new XMLHttpRequest();
+    let jsonFile = "https://gist.githubusercontent.com/MBRzealand/f1e647d25955ac164e6fff66b93130fe/raw/096a55df0e9392a6bfa564a9beb4e04cda9e50a2/JSON.json"
+    let response = await fetch(jsonFile)
 
-    xhttp.onload = function() {
-
-        let jsonData = JSON.parse(this.responseText);
+    if (response.ok){
+        let jsonData = await response.json()
         let jsonString = JSON.stringify(jsonData)
 
         let textInput = document.getElementById('textInput').value;
@@ -30,15 +30,9 @@ function searchJSON(){
             .replaceAll('"}', '"\n    }')
             .replaceAll('},<font color="green">{', '},\n<font color="green">    {')
             .replaceAll('}</font>],', '}</font>\n  ],')
-            .replaceAll('],','],\n')
-            .replaceAll(']</font>,',']</font>,\n')
-            .replaceAll(']</font>}',']</font>\n}')
-            .replaceAll('}</font>]}','}\n</font>  ]\n}')
-
-
+            .replaceAll('],', '],\n')
+            .replaceAll(']</font>,', ']</font>,\n')
+            .replaceAll(']</font>}', ']</font>\n}')
+            .replaceAll('}</font>]}', '}\n</font>  ]\n}')
     }
-
-    xhttp.open("GET", "JSON.json", true);
-    xhttp.send();
-
 }
